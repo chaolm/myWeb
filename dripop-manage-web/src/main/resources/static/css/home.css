@@ -1,0 +1,53 @@
+.data-card {
+  color: #fff;
+}
+.data-card h3 {
+  font-size: 24px;
+  height: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media (max-width: 1280px) {
+  .data-card h3 {
+    font-size: 20px;
+  }
+}
+.data-card .text {
+  font-size: 14px;
+}
+@media (max-width: 1280px) {
+  .data-card .text {
+    font-size: 12px;
+  }
+}
+.ivu-form .ivu-form-item-label {
+  font-size: 14px;
+}
+.announcement li {
+  border-bottom: 1px solid #d7d7d7;
+  margin-bottom: 17px;
+}
+.announcement li:last-child {
+  border: 0;
+  margin: 0;
+}
+.announcement li a {
+  display: block;
+  padding-bottom: 17px;
+}
+.announcement li a h3 {
+  font-size: 14px;
+  margin-bottom: 3px;
+  font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.announcement li a p {
+  font-size: 12px;
+  color: #888;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

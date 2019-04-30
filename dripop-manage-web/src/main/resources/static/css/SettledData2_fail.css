@@ -1,0 +1,116 @@
+.main {
+  background-color: #ddd;
+  position: relative;
+  margin-left: 0;
+  min-width: 702px;
+}
+.main .SettledData {
+  width: 702px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 40px auto;
+  text-align: center;
+/*入驻头部*/
+}
+.main .SettledData .ApplyAd_title {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 30px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #eee;
+}
+.main .SettledData .ApplyAd_title .ApplyAd_logo {
+  width: 40px;
+  height: 32px;
+  float: left;
+  margin: 14px 10px 0 0;
+  background: url("../images/lricons.png") -143px -43px no-repeat;
+}
+.main .SettledData .SettledData_con {
+  padding-bottom: 26px;
+  background-color: #fff;
+}
+.main .SettledData .SettledData_con .SettledData_nav {
+  width: 100%;
+  height: 61px;
+  padding: 20px 0 0 26px;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li {
+  width: 177px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  float: left;
+  color: #fff;
+  font-size: 12px;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li:nth-child(1) {
+  background: url("../images/lricons.png") -306px -62px no-repeat;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li:nth-child(2) {
+  background: url("../images/lricons.png") -306px -179px no-repeat;
+  margin-left: -19px;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li:nth-child(3) {
+  background: url("../images/lricons.png") -306px -119px no-repeat;
+  margin-left: -15px;
+  color: #222;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li:nth-child(4) {
+  width: 167px;
+  margin-left: -15px;
+  background: url("../images/lricons.png") -306px -233px no-repeat;
+  color: #222;
+}
+.main .SettledData .SettledData_con .fail_sub {
+  font-size: 26px;
+  color: #e5240b;
+  margin-top: 54px;
+}
+.main .SettledData .SettledData_con .result {
+  width: 476px;
+  height: 160px;
+  margin: 13px auto 0;
+  border: 1px solid #d2d2d2;
+  padding: 15px 20px;
+  line-height: 1.8;
+  text-align: left;
+  overflow: auto;
+}
+.main .SettledData .SettledData_con .result ul {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.main .SettledData .SettledData_con .result ul li {
+  color: #666;
+  font-size: 14px;
+}
+.main .SettledData .SettledData_con .modify {
+  display: inline-block;
+  margin-top: 40px;
+  width: 270px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background-color: #5b9fe7;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+}
+.main .SettledData .SettledData_con .CustomerSer {
+  font-size: 14px;
+  color: #7b7b7b;
+  margin-top: 50px;
+}
+.main .SettledData .SettledData_con .CustomerSer span {
+  color: #3783d4;
+}

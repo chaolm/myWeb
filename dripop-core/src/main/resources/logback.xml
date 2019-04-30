@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<property resource="application.properties" />
+	<property name="diskStore" value="/usr/logs/${server.name}" />
+	<property name="maxFileSize" value="10MB" />
+	<property name="pattern" value="%date %level [%thread] %10logger [%file:%line] %msg%n" />
+	<property name="pattern_simple" value="%date [%file:%line] %msg%n" />
+	
+	
+	<!-- ==========================================root[begin]========================================== -->
+	<!-- root设置 -->
+	<property name="fileNamePattern_root_info" value="${diskStore}/%d{yyyy/MM/dd}/info_%i.log" />
+	<property name="fileNamePattern_root_warn" value="${diskStore}/%d{yyyy/MM/dd}/warn_%i.log" />
+	<property name="fileNamePattern_root_error" value="${diskStore}/%d{yyyy/MM/dd}/error_%i.log" />
+	<property name="pattern_root" value="%date %level [%thread] %10logger [%file:%line] %msg%n" />
+	
+    <!--root日志文件模式设置：按指定文件大小分割-->
+    <!-- INFO日志 -->
+    <appender name="DailyFile_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    	<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+	      	<onMismatch>DENY</onMismatch>
+	    </filter>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	    	<fileNamePattern>${fileNamePattern_root_info}</fileNamePattern>
+	    	<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        		<maxFileSize>${maxFileSize}</maxFileSize>
+      		</timeBasedFileNamingAndTriggeringPolicy>
+	    </rollingPolicy>
+    	<encoder>
+   			<pattern>${pattern}</pattern>
+    	</encoder>
+    </appender>
+    
+    <!-- WARN日志 -->
+    <appender name="DailyFile_WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    	<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+      		<onMatch>ACCEPT</onMatch>
+	      	<onMismatch>DENY</onMismatch>
+	    </filter>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	    	<fileNamePattern>${fileNamePattern_root_warn}</fileNamePattern>
+	    	<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        		<maxFileSize>${maxFileSize}</maxFileSize>
+      		</timeBasedFileNamingAndTriggeringPolicy>
+	    </rollingPolicy>
+    	<encoder>
+   			<pattern>${pattern}</pattern>
+    	</encoder>
+    </appender>
+    <!-- ERROR日志 -->
+    <appender name="DailyFile_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    	<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+      		<onMatch>ACCEPT</onMatch>
+	      	<onMismatch>DENY</onMismatch>
+	    </filter>
+	    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+	    	<fileNamePattern>${fileNamePattern_root_error}</fileNamePattern>
+	    	<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        		<maxFileSize>${maxFileSize}</maxFileSize>
+      		</timeBasedFileNamingAndTriggeringPolicy>
+	    </rollingPolicy>
+    	<encoder>
+   			<pattern>${pattern}</pattern>
+    	</encoder>
+    </appender>
+    <!--root控制台模式设置-->
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+   		<encoder>
+			<pattern>${pattern}</pattern>
+    	</encoder>
+    </appender>
+    
+    <!-- root日志记录配置，上测试、预发布、生产时候去掉Console模式 -->
+    <root level="INFO">
+        <appender-ref ref="DailyFile_INFO" />
+        <appender-ref ref="DailyFile_WARN" />
+        <appender-ref ref="DailyFile_ERROR" />
+        <appender-ref ref="Console" />
+    </root>
+    <!-- ==========================================root[end]========================================== -->
+</configuration>

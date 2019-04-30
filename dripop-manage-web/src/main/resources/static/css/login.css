@@ -1,0 +1,94 @@
+/*修改iview*/
+.ivu-form-item {
+  height: 30px;
+  margin-bottom: 10px;
+}
+.ivu-form-item-content {
+  height: 30px;
+  line-height: 30px;
+  display: inline-flex;
+}
+.ivu-form-item-content .ivu-input-wrapper {
+  width: 236px;
+  height: 30px;
+}
+.ivu-form-item-content input {
+  width: 236px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #dcdccd;
+  padding: 0 10px;
+}
+.login_btn {
+  height: 38px;
+  margin-bottom: 20px;
+}
+.login_btn .ivu-form-item-content {
+  height: 38px;
+}
+.login_btn .ivu-form-item-content button {
+  width: 270px;
+  font-size: 16px;
+}
+.btns {
+  height: 58px;
+  margin-bottom: 34px;
+}
+.btns .ivu-form-item-content {
+  height: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+.btns button {
+  height: 38px;
+  width: 128px;
+  font-size: 16px;
+}
+.ivu-form-item-error-tip {
+  display: none;
+}
+/*样式*/
+.user_icon {
+  width: 30px;
+  height: 25px;
+  margin: 2px 10px 0 0;
+  background: url("../images/lricons.png") -6px -4px no-repeat;
+}
+.password_icon {
+  width: 30px;
+  height: 25px;
+  margin: 2px 10px 0 0;
+  background: url("../images/lricons.png") -40px -4px no-repeat;
+}
+.main {
+  background: url("../images/background.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.main .login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 320px;
+  background-color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  transform: translate(-50%, -50%);
+}
+.main .login .tips_box {
+  margin: 0 auto;
+  padding: 18px 20px;
+}
+.main .login .tips_box .tips {
+  font-size: 12px;
+  color: #ee2828;
+}
+.main .login .tips_box .tips .tips_icon {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  vertical-align: text-top;
+  background: url("../images/lricons.png") -74px -9px no-repeat;
+}

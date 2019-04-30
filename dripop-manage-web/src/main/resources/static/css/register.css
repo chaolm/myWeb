@@ -1,0 +1,90 @@
+.ivu-form-item {
+  height: 30px;
+  margin-bottom: 10px;
+}
+.ivu-form-item .ivu-form-item-label {
+  color: #888;
+}
+.ivu-form-item-content {
+  height: 30px;
+  line-height: 30px;
+  color: #888;
+}
+.ivu-form-item-content .ivu-input-wrapper {
+  width: 236px;
+  height: 30px;
+  margin-right: 10px;
+}
+.ivu-form-item-content input {
+  width: 236px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #dcdccd;
+  padding: 0 10px;
+}
+.ivu-form-item-content .code_input {
+  width: 130px;
+  float: left;
+}
+.ivu-form-item-content .code_input input {
+  width: 130px;
+}
+.code_btn {
+  padding: 0;
+}
+.register_btn {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.register_btn .ivu-form-item-content {
+  height: 40px;
+}
+.register_btn .ivu-form-item-content button {
+  width: 472px;
+  font-size: 16px;
+}
+.ivu-form-item-error-tip {
+  display: none;
+}
+.main {
+  background: url("../images/background.png") no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.main .register {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 702px;
+  height: 386px;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+}
+.main .register .ApplyAd_title {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 30px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #eee;
+}
+.main .register .ApplyAd_title .ApplyAd_logo {
+  width: 40px;
+  height: 32px;
+  float: left;
+  margin: 14px 10px 0 0;
+  background: url("../images/lricons.png") -143px -43px no-repeat;
+}
+.main .register form {
+  padding: 30px 0 0 30px;
+}
+.main .register form .tip {
+  color: #ed3f14;
+}
+.main .register form .tip_1 {
+  color: #888;
+}

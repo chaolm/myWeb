@@ -1,0 +1,83 @@
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+body .contain {
+  padding-top: 2.92rem;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+body .contain .tip {
+  font-size: 0.34rem;
+  color: #000;
+  margin-bottom: 0.71rem;
+}
+body .contain .logoBox {
+  width: 100%;
+}
+body .contain .logoBox .logo {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+body .contain .logoBox .logo.zhifubao {
+  background-image: url("../images/zhifubao@2x.png");
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  body .contain .logoBox .logo.zhifubao {
+    background-image: url("../images/zhifubao@3x.png");
+  }
+}
+body .contain .logoBox .logo.weixin {
+  background-image: url("../images/weixin@2x.png");
+  background-size: 100% 100%;
+  margin-left: 1rem;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  body .contain .logoBox .logo.weixin {
+    background-image: url("../images/weixin@3x.png");
+  }
+}
+body .footer {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  text-align: center;
+}
+body .footer .Support {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+body .footer .Support .img_left {
+  font-size: 0.24rem;
+  color: #b7b7b7;
+  margin-right: 0.06rem;
+}
+body .footer .Support .footer_img {
+  display: inline-block;
+  width: 0.96rem;
+  height: 0.26rem;
+  vertical-align: text-bottom;
+  background-image: url("../images/logo@2x.png");
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  body .footer .Support .footer_img {
+    background-image: url("../images/logo@3x.png");
+  }
+}
+body .footer .Support .img_right {
+  font-size: 0.24rem;
+  color: #b7b7b7;
+}

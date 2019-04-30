@@ -1,0 +1,280 @@
+/*公共样式*/
+/*整体flex布局*/
+[v-cloak] {
+  display: none !important;
+}
+.ivu-notice {
+  z-index: 10010;
+}
+#app {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+/*清浮动*/
+.after:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.lf {
+  float: left;
+}
+.rt {
+  float: right;
+}
+/*修改密码*/
+.modifyPwForm {
+  padding: 10px 20px 0 0;
+}
+.modifyPwForm .ivu-form-item {
+  margin: 0;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  margin-bottom: 30px;
+}
+.modifyPwForm .ivu-form-item .ivu-form-item-content .tip {
+  margin-top: 0;
+  color: #888;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 1;
+  padding-top: 6px;
+}
+.modifyPwForm .ivu-form-item .ivu-form-item-content div:last-child {
+  display: block;
+}
+.modifySucc .ivu-modal-footer {
+  border-top: 0;
+}
+/*头部*/
+#top {
+  z-index: 10002;
+  height: 60px;
+  width: 100%;
+  background-color: #234d7b;
+  line-height: 60px;
+  padding: 0 30px;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#top .logo {
+  width: 112px;
+  height: 32px;
+  float: left;
+  margin-top: 14px;
+  margin-right: 8px;
+  background: url("../images/lricons.png") -6px -42px no-repeat;
+}
+#top .platform {
+  font-size: 18px;
+  color: #fff;
+}
+#top .company {
+  font-size: 14px;
+  color: #fff;
+  margin-left: 18px;
+}
+#top .right {
+  float: right;
+  color: #fff;
+}
+#top .right .username {
+  margin-right: 30px;
+}
+#top .right .loRegCan {
+  color: #fff;
+  float: right;
+  cursor: pointer;
+}
+#top .right .loRegCan a {
+  display: inline-block;
+  color: #fff;
+}
+#top .right .loRegCan a .Can_icon {
+  width: 23px;
+  height: 21px;
+  margin-left: 10px;
+  float: right;
+  margin-top: 18px;
+  background: url("../images/lricons.png") -180px -9px no-repeat;
+}
+#top .right .loRegCan a .mo_icon {
+  width: 23px;
+  height: 21px;
+  margin-right: 10px;
+  float: left;
+  margin-top: 18px;
+  background: url("../images/modifyPw.png") -172px -60px no-repeat;
+}
+.main {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+  margin-left: 200px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  overflow-y: hidden;
+  min-height: 100vh;
+}
+.main.hide {
+  margin-left: 66px;
+}
+.main.hide >.sidebar {
+  width: 66px;
+}
+.main.hide >.sidebar .nav-level2 {
+  width: 0;
+}
+.main.hide >.sidebar .nav-level1 .arrow .ivu-icon-chevron-right {
+  display: inline;
+}
+.main.hide >.sidebar .nav-level1 .arrow .ivu-icon-chevron-left {
+  display: none;
+}
+.main >.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main >.sidebar .nav-level1 {
+  width: 66px;
+  background: #ececec;
+  text-align: center;
+  font-size: 14px;
+  color: #222;
+  min-height: 100%;
+}
+.main >.sidebar .nav-level1 .arrow {
+  display: block;
+  border-bottom: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.main >.sidebar .nav-level1 .arrow .ivu-icon-chevron-right {
+  display: none;
+}
+.main >.sidebar .nav-level1 ul li a {
+  display: block;
+  padding: 10px 4px 10px 0;
+  height: 64px;
+  color: #222;
+  border-bottom: 1px solid #ccc;
+  border-left: 4px solid transparent;
+}
+.main >.sidebar .nav-level1 ul li a:hover {
+  color: #2b9ce4;
+  border-left: 4px solid #2b9ce4;
+}
+.main >.sidebar .nav-level1 ul li a.active {
+  color: #2b9ce4;
+  border-left: 4px solid #2b9ce4;
+  background: #f4f8fb;
+}
+.main >.sidebar .nav-level2 {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px 0;
+}
+.main >.sidebar .nav-level2 ul {
+  display: none;
+}
+.main >.sidebar .nav-level2 ul.active {
+  display: block;
+}
+.main >.sidebar .nav-level2 ul li {
+  border-bottom: 1px solid #ccc;
+}
+.main >.sidebar .nav-level2 ul li:last-child {
+  border: 0;
+}
+.main >.sidebar .nav-level2 ul li a {
+  display: block;
+  color: #222;
+  font-size: 13px;
+  padding: 10px 15px;
+  text-align: center;
+}
+.main >.sidebar .nav-level2 ul li a:hover,
+.main >.sidebar .nav-level2 ul li a.active {
+  color: #2b9ce4;
+}
+.main >.main-container {
+  padding: 10px;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #e4ebf0;
+  min-width: 1000px;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-all;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  z-index: 1;
+}
+.ivu-breadcrumb {
+  color: #222;
+}
+.ivu-breadcrumb >span:last-child {
+  font-weight: normal;
+}
+.ivu-breadcrumb a {
+  color: #222;
+}
+.ivu-breadcrumb .ivu-breadcrumb-item-separator {
+  color: #222;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table thead tr {
+  background: #2d8cf0;
+  color: #fff;
+}
+table tbody tr:hover {
+  background: #ebf7ff;
+}
+table td {
+  padding: 14px;
+  border: 1px solid #e9eaec;
+  vertical-align: middle;
+  text-align: center;
+  word-break: break-all;
+  word-wrap: break-word;
+}

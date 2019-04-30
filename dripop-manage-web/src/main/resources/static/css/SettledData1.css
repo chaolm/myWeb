@@ -1,0 +1,308 @@
+/*iview修改*/
+.ivu-form-item {
+  height: 30px;
+  margin: 0 0 44px 80px;
+}
+.ivu-form-item .ivu-form-item-label {
+  color: #888;
+}
+.ivu-form-item-content {
+  height: 30px;
+  line-height: 30px;
+  color: #888;
+}
+.ivu-form-item-content input {
+  width: 320px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #dcdccd;
+  padding: 0 10px;
+}
+.ivu-form-item-error-tip {
+  padding-top: 8px;
+  margin-top: 2px;
+  width: 370px;
+  background-color: #fff;
+}
+.Category {
+  width: 320px;
+}
+.Category .ivu-form-item-content {
+  width: 320px;
+}
+.Category .ivu-col {
+  width: 320px;
+}
+.address {
+  margin: 0 0 84px 80px;
+}
+.address .addre {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  line-height: 1;
+  color: #ed3f14;
+  padding-top: 8px;
+  margin-top: 2px;
+  width: 370px;
+  background-color: #fff;
+}
+.address .ivu-form-item {
+  margin: 0;
+  margin-top: 10px;
+}
+.address .ivu-input-wrapper {
+  z-index: 1;
+}
+.address .ivu-form-item-error-tip {
+  padding-top: 8px;
+  z-index: 0;
+}
+.address .ivu-form-item-label:before {
+  content: '*';
+  display: inline-block;
+  margin-right: 4px;
+  line-height: 1;
+  font-family: SimSun;
+  font-size: 12px;
+  color: #ed3f14;
+}
+.address_Row {
+  width: 320px;
+  margin: 0 !important;
+}
+.address_Row .ivu-form-item {
+  margin-top: 0;
+}
+.address_Row .ivu-form-item-error-tip {
+  display: none;
+}
+.address_Row .ivu-col {
+  padding: 0 !important;
+  width: 100px;
+}
+.address_Row .area select {
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  margin-right: 10px;
+}
+.address_Row .area select.red {
+  border-color: #ed3f14;
+}
+.address_Row .area select.grey {
+  border-color: #dcdccd;
+}
+.address_Row .area select.last {
+  margin-right: 0;
+}
+.picture {
+  height: 100px;
+  margin: 0 0 20px 80px;
+}
+.picture .camera {
+  width: 37px;
+  height: 29px;
+  display: inline-block;
+  background: url("../images/lricons.png") -132px -3px no-repeat;
+}
+.picture .ivu-form-item-content {
+  height: 100px;
+}
+.ivu-upload {
+  float: left;
+}
+.picture .camera_right {
+  height: 100px;
+  width: 250px;
+  margin-left: 10px;
+  float: left;
+}
+.picture .camera_right p {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.5;
+}
+.picture .camera_right button {
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+}
+.picture .ivu-form-item-error-tip {
+  display: none;
+}
+.picture .photo_tip {
+  color: #ed3f14 !important;
+}
+.demo-upload-list-cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+  text-align: center;
+  line-height: 100px;
+  background: rgba(0,0,0,0.6);
+}
+.demo-upload-list-cover i {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.demo-upload-list {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  float: left;
+  position: relative;
+}
+.demo-upload-list progress {
+  width: 100%;
+}
+.demo-upload-list img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.demo-upload-list:hover .demo-upload-list-cover {
+  display: block;
+}
+.SettledData_btn {
+  height: 40px;
+  margin: 0;
+  margin-top: 40px;
+  text-align: center;
+}
+.SettledData_btn .ivu-form-item-content {
+  height: 40px;
+  margin: 0 !important;
+}
+.SettledData_btn .ivu-form-item-content button {
+  width: 220px;
+  font-size: 16px;
+}
+.ivu-notice {
+  z-index: 10005;
+}
+.ivu-progress-inner {
+  width: 80px !important;
+}
+/*样式*/
+.main {
+  background-color: #ddd;
+  position: relative;
+  margin-left: 0;
+  min-width: 702px;
+}
+.main .SettledData {
+  width: 702px;
+  height: 1165px;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  margin: 40px auto;
+/*入驻头部*/
+}
+.main .SettledData .ApplyAd_title {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: left;
+  padding-left: 30px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #eee;
+}
+.main .SettledData .ApplyAd_title .ApplyAd_logo {
+  width: 40px;
+  height: 32px;
+  float: left;
+  margin: 14px 10px 0 0;
+  background: url("../images/lricons.png") -143px -43px no-repeat;
+}
+.main .SettledData .SettledData_con .SettledData_nav {
+  width: 100%;
+  height: 61px;
+  padding: 20px 0 0 26px;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li {
+  width: 177px;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  float: left;
+  color: #222;
+  font-size: 12px;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li:nth-child(1) {
+  background: url("../images/lricons.png") -306px -62px no-repeat;
+  color: #fff;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li:nth-child(2) {
+  background: url("../images/lricons.png") -306px -119px no-repeat;
+  margin-left: -19px;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li:nth-child(3) {
+  background: url("../images/lricons.png") -306px -119px no-repeat;
+  margin-left: -15px;
+}
+.main .SettledData .SettledData_con .SettledData_nav ul li:nth-child(4) {
+  width: 167px;
+  margin-left: -15px;
+  background: url("../images/lricons.png") -306px -233px no-repeat;
+}
+.main .SettledData .SettledData_con form {
+  padding: 38px 0 0 0;
+/*.proPhoto1
+          text-align: center;
+          position: relative;
+          margin-right: 20px;
+          height: 100px;
+          display: inline-block;
+          vertical-align: middle;
+          #plus
+            height:100px;
+            width: 100px;
+            border:1px dashed #dcdccd;
+            position: relative;
+            overflow: hidden;
+            #upload_img
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100px;
+              height: 100px;
+              .swfupload
+                position: absolute;
+                left: 0;
+              .uploadify-button
+                display: inline-block;
+                font-family: 'FontAwesome';
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                position: ABSOLUTE!important;
+                left: -2px;
+            .camera_img{
+              width:36px;
+              height: 36px;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform:translate(-50%,-50%);
+              background:url(../../images/lricons.png) -133px -1px  no-repeat
+          p
+            position: absolute;
+            bottom: -30px;
+            width: 100%;
+            text-align:center;*/
+}

@@ -1,0 +1,111 @@
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+body .contain {
+  padding-top: 0.8rem;
+  text-align: center;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+body .contain .top {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+body .contain .top .logo {
+  width: 0.76rem;
+  height: 0.78rem;
+  display: inline-block;
+  background-image: url("../images/alipay-pay@2x.png");
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  body .contain .top .logo {
+    background-image: url("../images/alipay-pay@3x.png");
+  }
+}
+body .contain .top .logo_right {
+  display: inline-block;
+}
+body .contain .top .logo_right .store {
+  font-size: 0.34rem;
+  color: #000;
+}
+body .contain .top .logo_right .company {
+  font-size: 0.24rem;
+  color: #b7b7b7;
+  text-align: left;
+}
+body .contain .top .logo_right .company span {
+  font-size: 0.16rem;
+  background-color: #d3d3d3;
+  color: #fff;
+  margin-right: 0.04rem;
+  vertical-align: border-bottom;
+  padding: 0.03rem 0.05rem;
+  border-radius: 0.04rem;
+}
+body .contain .price_title {
+  font-size: 0.3rem;
+  color: #00abe5;
+  margin-bottom: 0.7rem;
+}
+body .contain .price {
+  font-size: 0.84rem;
+  color: #07a7f2;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+body .contain .btn {
+  width: 3.54rem;
+  height: 0.76rem;
+  display: inline-block;
+  border: 1px solid #2b9ce4;
+  border-radius: 0.16rem;
+  text-align: center;
+  line-height: 0.76rem;
+  color: #07a7f2;
+  font-size: 0.3rem;
+}
+body .footer {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  text-align: center;
+}
+body .footer .Support {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+body .footer .Support .img_left {
+  font-size: 0.24rem;
+  color: #b7b7b7;
+  margin-right: 0.06rem;
+}
+body .footer .Support .footer_img {
+  display: inline-block;
+  width: 0.96rem;
+  height: 0.26rem;
+  vertical-align: text-bottom;
+  background-image: url("../images/logo@2x.png");
+  background-size: 100% 100%;
+}
+@media (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  body .footer .Support .footer_img {
+    background-image: url("../images/logo@3x.png");
+  }
+}
+body .footer .Support .img_right {
+  font-size: 0.24rem;
+  color: #b7b7b7;
+}
